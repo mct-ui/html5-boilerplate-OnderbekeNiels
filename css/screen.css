@@ -89,6 +89,7 @@ ul,
 ol{
     padding-left: 24px;
 }
+
 blockquote {
     font-style: italic;
     font-size: 23px;
@@ -104,7 +105,8 @@ li ol{
 
 }
 
-blockquote {
+/* universal selector */
+blockquote * {
     font-size: inherit;
     line-height: inherit;
 }
@@ -125,12 +127,13 @@ hr {
 }
 
 a {
-
+    color: royalblue;
+    transition: all .1s ease-in-out;
 }
 
 a:hover,
 a:focus {
-
+    color: blueviolet
 }
 
 a:visited,
