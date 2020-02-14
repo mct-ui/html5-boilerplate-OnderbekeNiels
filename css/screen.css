@@ -133,12 +133,12 @@ a {
 
 a:hover,
 a:focus {
-    color: blueviolet
+    color: yellow;
 }
 
 a:visited,
 a:active {
-    color: blueviolet
+    color: yellow;
 }
 
 
