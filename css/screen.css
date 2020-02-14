@@ -10,6 +10,7 @@ html {
   font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
   color: #111;
   padding: 24px 24px 0;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -131,14 +132,79 @@ a {
     transition: all .1s ease-in-out;
 }
 
-a:hover,
-a:focus {
-    color: yellow;
+table {
+    width: 100%;
+    border-spacing: 0;
 }
 
+th {
+    text-align: left;
+}
+
+th,
+td {
+    padding: 4px 8px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.odd {
+    background-color: whitesmoke;
+}
+
+
+
+/**LOVE comes before hate*/
 a:visited,
 a:active {
-    color: yellow;
+    color: green;
+}
+
+a:hover,
+a:focus {
+    color: red;
+}
+
+/*
+    Media Queries
+    ---
+    EXAMPLE Media Queries for Responsive Design.
+    These examples override the primary ('mobile first') styles.
+    Modify as content requires.
+*/
+
+
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in Bootstrap
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    h1{
+        font-size: 58;
+        line-height: 64px;
+    }
+    html{
+        padding: 48px 48px 24px
+    }
+}
+
+/* Large devices (landscape tablets, desktops, 992px and up) */
+@media (min-width: 992px) {
+    html{
+        padding: 48px 48px 24px
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    html{
+        padding: 48px 48px 24px
+    }
 }
 
 
